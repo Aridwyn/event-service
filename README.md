@@ -18,9 +18,12 @@
 - **Linux**: `mongod-linux-amd64` (извлечь `bin/mongod` из архива, затем `chmod +x`)
 - **macOS**: `mongod-darwin-amd64` (извлечь `bin/mongod` из архива, затем `chmod +x`)
 
-**Скачать бинарники MongoDB:**
-- Прямые ссылки: [fastdl.mongodb.org](https://fastdl.mongodb.org/) (выберите платформу и версию)
-- Официальная страница: [mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+**Скачать бинарники MongoDB (версия 6.0.17):**
+- **Windows**: [https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.17.zip](https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.17.zip)
+- **Linux**: [https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.17.tgz](https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.17.tgz)
+- **macOS**: [https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.17.tgz](https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.17.tgz)
+
+Альтернативно: [официальная страница загрузки](https://www.mongodb.com/try/download/community)
 
 Протестировано с MongoDB 6.0.17. Более новые версии (6.x, 7.x) должны работать аналогично.
 
