@@ -32,16 +32,25 @@
 
 **Прямые ссылки на официальные архивы MongoDB:**
 
-Для получения актуальных ссылок на конкретные версии MongoDB посетите:
-- **Официальная страница загрузки**: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+Рекомендуемая версия для проекта: **MongoDB 6.0.x** (протестировано с версией 6.0.17).
 
-Или используйте прямые ссылки на fastdl.mongodb.org (замените `X.X.X` на актуальную версию, например `7.0.15`):
-- **Windows (amd64)**: `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-X.X.X.zip`
-- **Linux (amd64, Ubuntu 22.04)**: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-X.X.X.tgz`
-- **Linux (amd64, RHEL 8)**: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-X.X.X.tgz`
-- **macOS (amd64)**: `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-X.X.X.tgz`
+Прямые ссылки на fastdl.mongodb.org (замените `X.X.X` на конкретную версию, например `6.0.17`):
 
-Рекомендуется использовать версию **MongoDB 7.0.x** или выше.
+**Windows (amd64, legacy):**
+- `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-X.X.X.zip`
+- Для Windows 7/Server 2008 R2 используйте legacy версию
+
+**Linux (amd64):**
+- Ubuntu 20.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-X.X.X.tgz`
+- Ubuntu 22.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-X.X.X.tgz`
+- RHEL 8: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-X.X.X.tgz`
+
+**macOS (amd64):**
+- `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-X.X.X.tgz`
+
+Альтернативно, используйте официальную страницу загрузки:
+- **Официальная страница**: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+- После выбора платформы и версии, скачайте архив и извлеките бинарник `mongod` (или `mongod.exe` для Windows) из папки `bin/`
 
 После размещения бинарников запустите приложение:
 
