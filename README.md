@@ -30,10 +30,18 @@
    - Распакуйте архив (`.tgz`) и скопируйте файл `mongod` из папки `bin/` в `embedded/` с именем `mongod-darwin-amd64`
    - Убедитесь, что файл имеет права на выполнение: `chmod +x embedded/mongod-darwin-amd64`
 
-**Прямые ссылки на официальные архивы MongoDB (версия 7.0.x):**
-- Windows: `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.x.zip`
-- Linux: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-7.0.x.tgz`
-- macOS: `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-7.0.x.tgz`
+**Прямые ссылки на официальные архивы MongoDB:**
+
+Для получения актуальных ссылок на конкретные версии MongoDB посетите:
+- **Официальная страница загрузки**: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
+Или используйте прямые ссылки на fastdl.mongodb.org (замените `X.X.X` на актуальную версию, например `7.0.15`):
+- **Windows (amd64)**: `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-X.X.X.zip`
+- **Linux (amd64, Ubuntu 22.04)**: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-X.X.X.tgz`
+- **Linux (amd64, RHEL 8)**: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-X.X.X.tgz`
+- **macOS (amd64)**: `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-X.X.X.tgz`
+
+Рекомендуется использовать версию **MongoDB 7.0.x** или выше.
 
 После размещения бинарников запустите приложение:
 
