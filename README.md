@@ -12,7 +12,30 @@
 
 ### Со встроенным MongoDB (по умолчанию)
 
-Просто запустите приложение:
+Для работы со встроенным MongoDB необходимо загрузить бинарники MongoDB и разместить их в папке `embedded/`.
+
+#### Загрузка бинарников MongoDB
+
+1. **Windows (amd64)**:
+   - Скачайте MongoDB Community Server для Windows: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Распакуйте архив и скопируйте файл `mongod.exe` из папки `bin/` в `embedded/` с именем `mongod-windows-amd64.exe`
+
+2. **Linux (amd64)**:
+   - Скачайте MongoDB Community Server для Linux: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Распакуйте архив (`.tgz`) и скопируйте файл `mongod` из папки `bin/` в `embedded/` с именем `mongod-linux-amd64`
+   - Убедитесь, что файл имеет права на выполнение: `chmod +x embedded/mongod-linux-amd64`
+
+3. **macOS (darwin, amd64)**:
+   - Скачайте MongoDB Community Server для macOS: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Распакуйте архив (`.tgz`) и скопируйте файл `mongod` из папки `bin/` в `embedded/` с именем `mongod-darwin-amd64`
+   - Убедитесь, что файл имеет права на выполнение: `chmod +x embedded/mongod-darwin-amd64`
+
+**Прямые ссылки на официальные архивы MongoDB (версия 7.0.x):**
+- Windows: `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.x.zip`
+- Linux: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-7.0.x.tgz`
+- macOS: `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-7.0.x.tgz`
+
+После размещения бинарников запустите приложение:
 
 ```bash
 go run ./cmd/event-service
@@ -91,8 +114,9 @@ event-service/
 
 ## Важные замечания
 
-- **Бинарники MongoDB** взяты из официальных архивов MongoDB (лицензия SSPL)
-- **Для production** рекомендуется использовать внешний MongoDB
+- **Бинарники MongoDB** необходимо загрузить вручную и разместить в папке `embedded/` (см. раздел "Быстрый старт" выше)
+- Бинарники берутся из официальных архивов MongoDB Community Server (лицензия SSPL)
+- **Для production** рекомендуется использовать внешний MongoDB через переменную окружения `MONGO_URI`
 - Встроенный MongoDB запускается с параметром `--nojournal` для быстрого старта в dev окружении
 - Все данные встроенного MongoDB хранятся во временной папке и удаляются при завершении работы
 
