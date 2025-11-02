@@ -1,0 +1,30 @@
+﻿# Binaries
+/event-service
+*.exe
+*.dll
+
+# Docker
+.docker
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage files
+*_coverage
+*_coverage.out
+*_coverage_report.txt
+coverage.html
+
+# Test binaries
+bin/linux/event-service
+bin/linux/test-runner
+cmd/test-runner/test-runner.exe
+
+# MongoDB binaries (too large for GitHub - users need to download separately)
+embedded/mongod-darwin-amd64
+embedded/mongod-linux-amd64
+embedded/mongod-windows-amd64.exe

@@ -1,0 +1,27 @@
+mode: set
+event-service/cmd/event-service/main.go:22.44,24.23 2 1
+event-service/cmd/event-service/main.go:24.23,26.30 2 1
+event-service/cmd/event-service/main.go:26.31,26.32 0 1
+event-service/cmd/event-service/main.go:30.2,32.16 3 1
+event-service/cmd/event-service/main.go:32.16,34.3 1 0
+event-service/cmd/event-service/main.go:35.2,35.31 1 1
+event-service/cmd/event-service/main.go:39.63,44.16 4 1
+event-service/cmd/event-service/main.go:44.16,46.3 1 1
+event-service/cmd/event-service/main.go:49.2,50.16 2 1
+event-service/cmd/event-service/main.go:50.16,53.3 2 0
+event-service/cmd/event-service/main.go:55.2,55.20 1 1
+event-service/cmd/event-service/main.go:59.59,64.2 3 1
+event-service/cmd/event-service/main.go:64.2,75.3 3 1
+event-service/cmd/event-service/main.go:77.2,77.10 1 1
+event-service/cmd/event-service/main.go:81.46,85.57 3 1
+event-service/cmd/event-service/main.go:85.57,87.3 1 1
+event-service/cmd/event-service/main.go:91.71,95.12 3 1
+event-service/cmd/event-service/main.go:95.12,108.3 6 1
+event-service/cmd/event-service/main.go:111.13,114.16 2 0
+event-service/cmd/event-service/main.go:114.16,116.3 1 0
+event-service/cmd/event-service/main.go:117.2,121.16 3 0
+event-service/cmd/event-service/main.go:121.16,123.3 1 0
+event-service/cmd/event-service/main.go:126.2,149.16 8 0
+event-service/cmd/event-service/main.go:153.22,159.2 5 1
+event-service/cmd/event-service/main.go:162.33,168.39 2 0
+event-service/cmd/event-service/main.go:168.39,170.3 1 0
