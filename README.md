@@ -16,41 +16,59 @@
 
 #### Загрузка бинарников MongoDB
 
+Бинарники можно скачать двумя способами:
+
+##### Способ 1: Прямое скачивание из архива (рекомендуется)
+
 1. **Windows (amd64)**:
-   - Скачайте MongoDB Community Server для Windows: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Скачайте архив MongoDB для Windows по ссылке ниже
    - Распакуйте архив и скопируйте файл `mongod.exe` из папки `bin/` в `embedded/` с именем `mongod-windows-amd64.exe`
 
 2. **Linux (amd64)**:
-   - Скачайте MongoDB Community Server для Linux: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Скачайте архив MongoDB для Linux по ссылке ниже
    - Распакуйте архив (`.tgz`) и скопируйте файл `mongod` из папки `bin/` в `embedded/` с именем `mongod-linux-amd64`
    - Убедитесь, что файл имеет права на выполнение: `chmod +x embedded/mongod-linux-amd64`
 
 3. **macOS (darwin, amd64)**:
-   - Скачайте MongoDB Community Server для macOS: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community?tck=docs_server)
+   - Скачайте архив MongoDB для macOS по ссылке ниже
    - Распакуйте архив (`.tgz`) и скопируйте файл `mongod` из папки `bin/` в `embedded/` с именем `mongod-darwin-amd64`
    - Убедитесь, что файл имеет права на выполнение: `chmod +x embedded/mongod-darwin-amd64`
 
-**Прямые ссылки на официальные архивы MongoDB:**
+##### Способ 2: Прямое скачивание бинарника (без архива)
+
+После скачивания архива вы можете сразу использовать бинарник из папки `bin/` без дополнительной распаковки:
+- Переименуйте скачанный файл согласно требованиям выше
+- Поместите его в папку `embedded/`
+
+**Прямые ссылки на официальные архивы MongoDB (fastdl.mongodb.org):**
 
 Рекомендуемая версия для проекта: **MongoDB 6.0.x** (протестировано с версией 6.0.17).
 
-Прямые ссылки на fastdl.mongodb.org (замените `X.X.X` на конкретную версию, например `6.0.17`):
+Замените `6.0.17` на нужную версию в ссылках ниже:
 
-**Windows (amd64, legacy):**
-- `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-X.X.X.zip`
-- Для Windows 7/Server 2008 R2 используйте legacy версию
+**Windows (amd64):**
+```
+https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.17.zip
+```
+После распаковки: `bin/mongod.exe` → переименовать в `mongod-windows-amd64.exe` → поместить в `embedded/`
 
 **Linux (amd64):**
-- Ubuntu 20.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-X.X.X.tgz`
-- Ubuntu 22.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-X.X.X.tgz`
-- RHEL 8: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-X.X.X.tgz`
+- Ubuntu 20.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-6.0.17.tgz`
+- Ubuntu 22.04: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.17.tgz`
+- RHEL 8: `https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-6.0.17.tgz`
+
+После распаковки: `bin/mongod` → переименовать в `mongod-linux-amd64` → поместить в `embedded/`
 
 **macOS (amd64):**
-- `https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-X.X.X.tgz`
+```
+https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-6.0.17.tgz
+```
+После распаковки: `bin/mongod` → переименовать в `mongod-darwin-amd64` → поместить в `embedded/`
 
-Альтернативно, используйте официальную страницу загрузки:
-- **Официальная страница**: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
-- После выбора платформы и версии, скачайте архив и извлеките бинарник `mongod` (или `mongod.exe` для Windows) из папки `bin/`
+**Альтернативный способ (официальная страница загрузки):**
+- Перейдите на [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+- Выберите платформу и версию MongoDB 6.0.x
+- Скачайте архив и извлеките бинарник `mongod` (или `mongod.exe` для Windows) из папки `bin/`
 
 После размещения бинарников запустите приложение:
 
